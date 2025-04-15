@@ -1,4 +1,3 @@
-import React from 'react'
 import {
     Card,
     CardContent,
@@ -7,13 +6,13 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
-import { Label } from './ui/label'
-import { Input } from './ui/input'
-import { Button } from './ui/button'
-import { useForm } from '@tanstack/react-form'
-import { Alert, AlertDescription, AlertTitle } from './ui/alert'
 import { validatingUserName } from '@/user'
-import {zodValidator} from '@tanstack/zod-form-adapter'
+import { useForm } from '@tanstack/react-form'
+import React from 'react'
+import { Alert, AlertDescription, AlertTitle } from './ui/alert'
+import { Button } from './ui/button'
+import { Input } from './ui/input'
+import { Label } from './ui/label'
 
 const SignUp = () => {
     const formData = useForm({
